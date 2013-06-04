@@ -1,0 +1,327 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+    <head onunload=""><!-- The blank onload is for prefetcher.js, to enable events on back button pressing -dgy -->
+        <!-- Hostname: clmobileweb3.wpprivate.com-->
+        <script>
+            if (window.location.href.indexOf('/settings') < 0 & window.location.href.indexOf('/offline') < 0 & navigator.cookieEnabled & document.cookie.indexOf("byeDavid")<0){
+                if (navigator.platform.substring(0,3)=="Mac"){
+                    var d = new Date();
+                    d.setTime(d.getTime()+(7*43200000));
+                    document.cookie= "sd=s; expires="+d.toGMTString() +"; domain=.washingtonpost.com; path=/";
+                    location.href="http://www.washingtonpost.com"+location.pathname;
+                }
+                if (navigator.platform.substring(0,3)=="Win"){
+                    var d = new Date();
+                    d.setTime(d.getTime()+(7*86400000));
+                    document.cookie= "sd=s; expires="+d.toGMTString() +"; domain=.washingtonpost.com; path=/";
+                    var request = new XMLHttpRequest();
+                    var url="/images/favicon.ico?w="+window.screen.width+"&h="+window.screen.height+"&r="+window.devicePixelRatio+"&a="+encodeURI(navigator.userAgent);
+                    request.open('GET',url,true);
+                    request.onreadystatechange = function() {
+                        if (request.readyState === 4 && request.status === 200) {
+                            var d = new Date();
+                            d.setTime(d.getTime()+(7*86400000));
+                            document.cookie= "sd=s; expires="+d.toGMTString() +"; domain=.washingtonpost.com; path=/";
+                            location.href="http://www.washingtonpost.com"+location.pathname;
+                        }
+                    };
+                    request.send(null);
+                }
+                if(document.cookie.indexOf("md=") < 0 && window.screen.width*window.screen.height/Math.pow((window.devicePixelRatio == undefined || navigator.userAgent.match(/(iPhone|iPod|iPad)/i) ? 1 : window.devicePixelRatio),2) < 480000) {
+                    var d = new Date();
+                    d.setTime(d.getTime()+31556900000);
+                    document.cookie= "md=1; expires="+d.toGMTString() + "; domain=.washingtonpost.com; path=/";
+                }
+            }
+            </script>
+        <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script><link rel="canonical" href="http://www.washingtonpost.com//blogs/capital-weather-gang/wp/2013/06/04/tropical-disturbance-in-gulf-of-mexico-heading-for-florida-eventually-up-east-coast/"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+                <meta name="apple-mobile-web-app-capable" content="no">
+                    <title>
+                        Washington Post</title>
+                    <link rel="shortcut icon" href="/images/favicon.ico"/>
+                    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114-precomposed.png">
+                        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72-precomposed.png">
+                            <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-57-precomposed.png">
+                                <style type="text/css" title="targetAudience">
+                                    div .regionalTargetAudience { display:block };
+                                    </style>
+                                <!--[if IE]>
+                                 <link rel="stylesheet" type="text/css" href="/styles/less/ms.less?v=2-181"/>
+                                 <![endif]-->
+                                <link rel="stylesheet" type="text/css" href="/static/v/2-181/styles/less/styles.less"/>
+                                <script type ="text/javascript">
+                                    var TWP = window.TWP = TWP || {};
+                                    TWP.mobile = TWP.mobile || {};
+                                    TWP.mobile.initFunctions = [];
+                                    TWP.mobile.changePageInitTempArray=[];
+                                    TWP.mobile.changePageInitArray=[];
+                                    TWP.mobile.urlUtils = TWP.mobile.urlUtils || {};
+                                    TWP.mobile.urlUtils.redirectToDesktop = function() {
+                                        //alert("redirecting to desktop");
+                                        if(document.body != null)
+                                        document.body.style.display="none"; // Hide the content of the page so we don't see it while waiting for the desktop
+                                        window.location = "http://www.washingtonpost.com"+window.location.pathname;
+                                    };
+                                    TWP.mobile.urlUtils.setOneTimeShowDesktopCookie= function() {
+                                        document.cookie= "sd=1;domain=.washingtonpost.com;"; // Don's specify expires, making it a session cookie
+                                    }
+                                    </script>
+    </head>
+    <body>
+        <div id="floatAd"></div>
+        <div class="page page-article" data-section="/blogs/capital-weather-gang" data-adkey="mob.wp.local/blog/capital_weather_gang" data-timestamp="20130604192618">
+            <header data-role="header" class="dropdown-group">
+                <dl class="horiz-menu">
+                    <dd id="menuItem-home" class="">
+                        <a href="/"><label>Home</label></a>
+                    </dd>
+                    <dd id="menuItem-politics," class="">
+                        <a href="/politics"><label>Politics</label></a>
+                    </dd>
+                    <dd id="menuItem-opinions" class="">
+                        <a href="/opinions"><label>Opinions</label></a>
+                    </dd>
+                    <dd id="menuItem-local" class="">
+                        <a href="/local"><label>Local</label></a>
+                    </dd>
+                    <dd id="menuItem-global-menu" class="dropdown">
+                        <a class="submenu"><label>More</label>
+                            <span class="arrow"></span></a>
+                    </dd>
+                </dl>
+                <dl id="dropdown-content_menuItem-global-menu" class="dropdown-content">
+                    <dl class="dual-submenu">
+                        <dd id="menu-sign-in" class="subMenuItem">
+                            <a href="">Sign In</a>
+                        </dd>
+                        <dd id="menu-sign-out" class="subMenuItem">
+                            <a href="">Log Out</a>
+                        </dd>
+                        <dd id="menu-subscribe" class="subMenuItem">
+                            <a href="https://ssl.washingtonpost.com/acquisition/?m=1">Subscribe</a>
+                        </dd>
+                    </dl>
+                    <dd class="groupHeading"><span>Sections</span></dd>
+                    <dd id="menu-politics" class="subMenuItem">
+                        <a href="/politics">Politics</a>
+                    </dd>
+                    <dd id="menu-opinions" class="subMenuItem">
+                        <a href="/opinions">Opinions</a>
+                    </dd>
+                    <dd id="menu-local" class="subMenuItem">
+                        <a href="/local">Local</a>
+                    </dd>
+                    <dd id="menu-sports" class="subMenuItem">
+                        <a href="/sports">Sports</a>
+                    </dd>
+                    <dd id="menu-national" class="subMenuItem">
+                        <a href="/national">National</a>
+                    </dd>
+                    <dd id="menu-world" class="subMenuItem">
+                        <a href="/world">World</a>
+                    </dd>
+                    <dd id="menu-business" class="subMenuItem">
+                        <a href="/business">Business</a>
+                    </dd>
+                    <dd id="menu-technology" class="subMenuItem">
+                        <a href="/business/technology">Technology</a>
+                    </dd>
+                    <dd id="menu-lifestyle" class="subMenuItem">
+                        <a href="/lifestyle">Lifestyle</a>
+                    </dd>
+                    <dd id="menu-entertainment" class="subMenuItem">
+                        <a href="/entertainment">Entertainment</a>
+                    </dd>
+                    <dd id="menu-games" class="subMenuItem">
+                        <a href="http://games.washingtonpost.com/">Games</a>
+                    </dd>
+                    <dd id="menu-photography" class="subMenuItem">
+                        <a href="/photography">Photos</a>
+                    </dd>
+                    <dd id="menu-video" class="subMenuItem">
+                        <a href="/video">Videos</a>
+                    </dd>
+                    <dd id="menu-classifieds" class="subMenuItem">
+                        <a href="/classifieds">Classifieds</a>
+                    </dd>
+                    <dd id="menu-settings" class="subMenuItem">
+                        <a href="/settings">Settings</a>
+                    </dd>
+                    <dd class="actionLine close"></dd>
+                </dl>
+                <div id="titlebar">
+                    <div class="section-title" data-section-url="/blogs/capital-weather-gang">
+                        <h1 class="sectionHeading" style="text-transform: uppercase">Capital Weather Gang</h1>
+                    </div>
+                    <a class="subscribe" href="https://account.washingtonpost.com/acquisition/?m=1">SUBSCRIBE</a>
+                </div>
+            </header>
+            <div class ="omniture" data-omniture='{"pageName": "capital-weather-gang:blog:capital-weather-gang - upeastcoast/ - 20130604 - tropical-disturbance-in-gulf-of-mexico-heading-for-florida,-eventually-up-east-coast?","channel": "wpm - capital-weather-gang","contentSubsection": "wpm - capital-weather-gang","contentType": "blog","contentAuthor": "brian mcnoldy","searchKeywords": "","pageFormat": "","DBPath": "","blogName": "capital-weather-gang","contentSource": ""}'></div>
+            <article class="content story">
+                <section class="intro">
+                    <h2 class="headline">
+                        Tropical disturbance in Gulf of Mexico heading for Florida, eventually up East Coast?
+                    </h2>
+                    <span class="byline">
+                        By Brian McNoldy,
+                    </span>
+                    <span class="publishDate">
+                        &nbsp;Published: TUESDAY, JUNE 04, 3:27 PM ET
+                    </span>
+                </section>
+                <section class="share bar" >
+                    <hr class="sizebar">
+                    <script>var mobilePath="/blogs/capital-weather-gang/wp/2013/06/04/tropical-disturbance-in-gulf-of-mexico-heading-for-florida-eventually-up-east-coast/"</script>
+                    <span class="facebook">
+                        <a class="noUrlChange" href="http://m.facebook.com/sharer.php?u=http%3A%2F%2Fwww.washingtonpost.com%2Fblogs%2Fcapital-weather-gang%2Fwp%2F2013%2F06%2F04%2Ftropical-disturbance-in-gulf-of-mexico-heading-for-florida-eventually-up-east-coast%2F"
+                            target="_blank">
+                            <span class="shareIcon"><span class="playicon">&nbsp;</span></span></a>
+                    </span>
+                    <span class="twitter">
+                        <a class="noUrlChange" href="https://twitter.com/intent/tweet?text=Tropical+disturbance+in+Gulf+of+Mexico+heading+for+Florida%2C+eventually+up+East+Coast%3F&url=http%3A%2F%2Fwww.washingtonpost.com%2Fblogs%2Fcapital-weather-gang%2Fwp%2F2013%2F06%2F04%2Ftropical-disturbance-in-gulf-of-mexico-heading-for-florida-eventually-up-east-coast%2F" target="_blank">
+                            <span class="shareIcon"><span class="playicon">&nbsp;</span></span></a>
+                    </span>
+                    <span class="sizectl">
+                        <span class="sizeless">
+                            <span class="sizelessInner">&nbsp;</span>
+                        </span>
+                        <span class="textSizeText">Aa</span>
+                        <span class="sizemore">
+                            <span class="sizemoreInner">&nbsp;</span>
+                        </span>
+                    </span>
+                    <hr class="sizebar" />
+                </section>
+                <section class="body fluidEmbedContainer">
+                    <p>An area of unsettled weather in the southern Gulf of Mexico has been churning and festering for a week now, and computer models have continued to show a tropical or subtropical system emerging from the region. Today, though still disorganized, it appears slightly more impressive in satellite images than it has in recent days, and could be heading for Florida later this week.</p><p>It&rsquo;s not out of the question it brings an enhanced period of rain to the Mid-Atlantic, including the D.C. area late Friday into Saturday.</p><p>Currently, the ocean under the system is warm enough to sustain a tropical cyclone. But the upper-level winds are too strong, and the heavy thunderstorm activity is all displaced well to the east of the surface circulation, limiting its ability to intensify.</p><div class="wp-caption aligncenter" id="attachment_8068">
+                        <a href="http://www.washingtonpost.com/blogs/capital-weather-gang/files/2013/06/91l.jpg">
+                            <div class="inline-img">
+                                <img data-src="/externimage/w/h/14p-kKPm6pzvJWvAsfrWQV3l5L0OVr3vbpcfWaCEAgMhOCvdxzOWqgeoyRuksnJLqMpSg_4BGVevb-y3JMaPjNExW8gwh2W02rd3LNvSydE/91l.jpg" data-aspect-ratio="auto" original="http://www.washingtonpost.com/blogs/capital-weather-gang/files/2013/06/91l.jpg"></div>
+                        </a>
+                        <p class="wp-caption-text">Afternoon visible satellite image over the Yucatan peninsula and southern Gulf of Mexico. (NASA)</p>
+                    </div><p>Models are still indicating that this disturbance will develop further, and head generally northeast toward northern Florida. It should make "landfall" on Thursday night into Friday morning. I put landfall in quotes because it may be a broad disorganized system that will not look like the classic symmetric tropical cyclone.</p><p>Heavy rain and thunderstorms are already affecting the southern Florida peninsula today, and will gradually increase in coverage northward throughout the week.</p><p>While it is very unlikely that it will become anything more than a tropical depression or low-grade (sub)tropical storm, even weak storms are capable of producing extremely heavy rain which inevitably leads to flooding issues.</p><p>The latest seven day precipitation forecast from the Weather Prediction Center shows a bullseye of 7 inches expected near Fort Myers, but substantial amounts of 2 inches or more cover almost all of Florida, then up into eastern Georgia, South Carolina, and North Carolina. Locally, totals could be even greater.</p><div class="wp-caption aligncenter" id="attachment_8069">
+                        <a href="http://www.washingtonpost.com/blogs/capital-weather-gang/files/2013/06/rain.jpg">
+                            <div class="inline-img">
+                                <img data-src="/externimage/w/h/14p-kKPm6pzvJWvAsfrWQV3l5L0OVr3vbpcfWaCEAgMhOCvdxzOWqgeoyRuksnJLqMpSg_4BGVevb-y3JMaPjNeeXV7TfwPANuc5UpX_Ubw/rain.jpg" data-aspect-ratio="auto" original="http://www.washingtonpost.com/blogs/capital-weather-gang/files/2013/06/rain.jpg"></div>
+                        </a>
+                        <p class="wp-caption-text">Seven-day rainfall forecast. (WPC)</p>
+                    </div><p>An aircraft reconnaissance mission will fly into the disturbance later today to survey its structure and environment. If it continues the trend of getting better organized, the surface pressure will fall, the wind speed will increase, and the next phases in its lifecycle would be Tropical Depression 1, then if the sustained winds increase to 40mph, tropical storm Andrea (or subtropical storm depending on the structure). If it remains disorganized, it will still be a rain maker, but with much weaker winds.</p><p>On average, the formation date of the first named storm is July 9, but it can certainly be much earlier. Last year, Alberto and Beryl had already formed and dissipated by this date.</p><p>
+                    <i>*</i> <a href="http://andrew.rsmas.miami.edu/bmcnoldy/">Brian McNoldy</a> <i>is</i> <i>a</i> <i>senior</i> <i>researcher</i> <i>at</i> <i>the</i> <i>University</i> <i>of</i> <i>Miami&rsquo;s</i> <i>Rosenstiel</i> <i>School</i> <i>of</i> <i>Marine</i> <i>and</i> <i>Atmospheric</i> <i>Science.</i>
+                    </p><div class="delayedScript" data-type="text/javascript">hashLoc = window.location.href.indexOf('#');allPage = false; if(hashLoc &gt; -1 &amp;&amp; !allPage) {if(window.location.href.indexOf('?') &lt; hashLoc) cutLoc = window.location.href.indexOf('?'); else cutLoc = hashLoc; top.location = 'http://www.washingtonpost.com/blogs/capital-weather-gang/wp/2013/06/04/tropical-disturbance-in-gulf-of-mexico-heading-for-florida-eventually-up-east-coast/999/' + window.location.href.substring(hashLoc); }</div>
+                </section>
+                <section class="threeComments"></section>
+                <section class="relatedContent"></section>
+            </article>
+            <nav id="bottomNav">
+                <section id="moreMenu">
+                    <div class="title">MORE</div>
+                    <div id="moreContact"><a href="mailto:mobilewebfeedback@washingtonpost.com">Contact us</a></div>
+                    <div id="morePrivacy"><a href="/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy policy</a></div>
+                </section><!-- moreMenu -->
+                <section id="myAccount">
+                    <div class="title">My Account</div>
+                    <span class="button sign-in">Sign In</span>
+                    <a class="subscribe" href="https://ssl.washingtonpost.com/acquisition/?m=1">Subscribe</a>
+                    <div class="account-info">
+                        <img height=60 width=60 src=""/>
+                        <span class="display-name"></span>
+                        <span class="sign-out">Log Out</span>
+                    </div>
+                </section>
+            </nav>
+            <footer id="footer">
+                <div class="copyright">&copy; Copyright 1996-2013 The Washington Post</div>
+                <a href="#" class="noUrlChange fullSiteLink">View desktop site</a>
+            </footer>
+        </div>
+        <div class="gallery-view" style="display:none;">
+            <div class="outer-nav">
+                <ul class="nav">
+                    <li id="swipeView-button-home"><span class="inner gallery-home">&nbsp;</span></li>
+                    <li id="swipeView-button-prev"><span class="inner gallery-prev">&nbsp;</span></li>
+                    <li id="swipeView-button-next"><span class="inner gallery-next">&nbsp;</span></li>
+                </ul>
+            </div>
+            <div class="slide-wrapper"></div>
+        </div>
+        <span class="paywall-overlay"></span>
+        <script type="text/template" id="gallerySlideTemplate">
+            <img onload="this.className = '';" class="loading"></img>
+            <div class="captionBlock captionMax">
+            <span class="headline">&nbsp;</span>
+            <span class="subtitle">&nbsp;</span>
+            <span class="captionText">&nbsp;</span>
+            <span class="byline">&nbsp;</span>
+            </div>
+            </script>
+        <div id="omniture-block"></div>
+        <script type="text/javascript" src="/static/v/2-181/scripts/lib/jquery-1.7.1.min.js"></script> 
+        <script type="text/javascript" src="/static/v/2-181/scripts/lib/modernizr.min.js"></script>
+        <script type="text/javascript" src="/static/v/2-181/scripts/lib/plugins/modernizr-wp-tests.js"></script>
+        <!-- <script type="text/javascript" src="/scripts/lib/matchMedia.min.js?v=2-181"></script> --> 
+        <script type="text/javascript" src="/static/v/2-181/scripts/lib/swipeview.min.js"></script>
+        <script type="text/javascript" src="/static/v/2-181/scripts/lib/enquire.min.js"></script>
+        <script type="text/javascript" src="/static/v/2-181/scripts/mobile-site.js"></script>
+        <script type="text/javascript" src="/static/v/2-181/scripts/cookie-util.js"></script>
+        <script type="text/javascript" src="/static/v/2-181/scripts/lib/embed-resize.js"></script>
+        <script>
+            foresight = {
+                options: {
+                    speedTestUri: "http://img3.wpdigital.net/wp-srv/mobile/mobile-web/speedTest/50k.jpeg",
+                    speedTestKB: 50,
+                    speedTestExpireMinutes: 30
+                }
+            };
+            </script>
+        <script type="text/javascript" src="/static/v/2-181/scripts/lib/foresight.min.js"></script>
+        <script type="text/javascript" src="/static/v/2-181/scripts/lib/writeCapture.js"></script>
+        <script type="text/javascript" src="/static/v/2-181/scripts/lib/plugins/jquery.writeCapture.js"></script>
+        <script type='text/javascript' src='/static/v/2-181/scripts/online.js'></script>
+        <script type="text/javascript" src="/static/v/2-181/scripts/prefetcher.js"></script>
+        <script type='text/javascript' src='/static/v/2-181/scripts/settings.js'></script>
+        <script type='text/javascript' src='/static/v/2-181/scripts/lib/fastclick.js'></script>
+        <script type='text/javascript' src='/static/v/2-181/scripts/comments.js'></script>
+        <script type='text/javascript' src='/static/v/2-181/scripts/lib/add2home.js'></script>
+        <!-- 
+         <script type='text/javascript' src='/static/v/2-181/scripts/logg.js'></script>
+         -->
+        <!-- SiteCatalyst code version: H.24.4.
+         Copyright 1996-2012 Adobe, Inc. All Rights Reserved
+         More info available at http://www.omniture.com -->
+        <script type="text/javascript">
+            var s_account="wpniwpmobileprod";
+            </script>
+        <script language="JavaScript" type="text/javascript" src="/static/v/2-181/scripts/s_code.js"></script>
+        <script type="text/javascript" src="/static/v/2-181/scripts/mobile-omniture.js"></script>
+        <noscript><img src="http://wpni.112.2o7.net/b/ss/wpniwpmobilepp/1/H.24.4--NS/0"
+            height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+        <!-- End SiteCatalyst code version: H.24.4. -->	
+        <!-- Begin comScore Tag -->
+        <script>
+            var _comscore = _comscore || []; _comscore.push({ c1: "2", c2: "3005617" }); (function() {
+                                                                                          var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+                                                                                          s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+                                                                                          el.parentNode.insertBefore(s, el); })();
+            </script>
+        <noscript>
+            <img src="http://b.scorecardresearch.com/p?c1=2&c2=3005617&c4=m.washingtonpost.com/nojs.html" /> </noscript>
+        <!-- End comScore Tag -->
+        <script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" + "d1ros97qkrwjf5.cloudfront.net/42/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-3.newrelic.com","b75594b02a","1721123","YVAEZhFQCkYDVRAKC1gaNUIRWApSIVkKFxZZWQpXER4lRxZfBw8BdVoIRhFeCFkHREsQDFlCMWIRVBdGI0QQCgdaUA==",0,13,new Date().getTime(),"","","","",""]);</script></body></html>
+

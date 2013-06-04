@@ -18,6 +18,8 @@
 		E4D1E66E175EADD900F8B305 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4D1E66D175EADD900F8B305 /* Default-568h@2x.png */; };
 		E4D1E671175EADD900F8B305 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1E670175EADD900F8B305 /* ViewController.m */; };
 		E4D1E674175EADD900F8B305 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4D1E672175EADD900F8B305 /* ViewController.xib */; };
+		E4D1E67B175EAEA100F8B305 /* firstPage.html in Resources */ = {isa = PBXBuildFile; fileRef = E4D1E67A175EAEA100F8B305 /* firstPage.html */; };
+		E4D1E67D175EAEAA00F8B305 /* secondPage.html in Resources */ = {isa = PBXBuildFile; fileRef = E4D1E67C175EAEAA00F8B305 /* secondPage.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		E4D1E66F175EADD900F8B305 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E4D1E670175EADD900F8B305 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E4D1E673175EADD900F8B305 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		E4D1E67A175EAEA100F8B305 /* firstPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = firstPage.html; sourceTree = "<group>"; };
+		E4D1E67C175EAEAA00F8B305 /* secondPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = secondPage.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				E4D1E670175EADD900F8B305 /* ViewController.m */,
 				E4D1E672175EADD900F8B305 /* ViewController.xib */,
 				E4D1E65E175EADD900F8B305 /* Supporting Files */,
+				E4D1E67A175EAEA100F8B305 /* firstPage.html */,
+				E4D1E67C175EAEAA00F8B305 /* secondPage.html */,
 			);
 			path = WebHistoryPrivateCrash;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 				E4D1E66C175EADD900F8B305 /* Default@2x.png in Resources */,
 				E4D1E66E175EADD900F8B305 /* Default-568h@2x.png in Resources */,
 				E4D1E674175EADD900F8B305 /* ViewController.xib in Resources */,
+				E4D1E67B175EAEA100F8B305 /* firstPage.html in Resources */,
+				E4D1E67D175EAEAA00F8B305 /* secondPage.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
